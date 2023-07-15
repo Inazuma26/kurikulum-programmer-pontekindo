@@ -42,11 +42,16 @@ var_dump(44 >= 44);
 
 //operator Inkremen dan Deckremen
 //post inkremen -> dikembalikan dulu variabel nya baru di tambah nilai 1
-$angka = 22;
-$angka++;
-echo $angka .PHP_EOL;
+// $angka = 22;
+// $angka++;
+// echo $angka .PHP_EOL;
 
-//PRE inkremen  -> ditambah nilai 1 dulu baru dikembalikan ke var nya
-$angka = 22;
-++$angka;
-echo $angka .PHP_EOL;
+// //PRE inkremen  -> ditambah nilai 1 dulu baru dikembalikan ke var nya
+// $angka = 22;
+// ++$angka;
+// echo $angka .PHP_EOL;
+
+// post dikremen diakhir di kembalikan dulu  var nya baru di kurang 1
+
+
+// pre dekremen di kurang 1 dulu baru dikembalikan ke var nya
