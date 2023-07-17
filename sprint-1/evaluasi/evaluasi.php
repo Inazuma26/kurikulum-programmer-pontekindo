@@ -80,6 +80,3 @@ if ($ahlakbaik == true && ($goodloking== true || $goodrekeming==true)){
 echo "jawaban ayu : $ayu\n";
 
 //7. buatlah switch untuk menampilkan tingkatan berat suatu barang! dengan expression / expressi didalam nya ada operator perbandingan misal kurang dari 10kg maka output nya ringan, antara 10-20kg agak ringan dan seterus nya
-
-
-

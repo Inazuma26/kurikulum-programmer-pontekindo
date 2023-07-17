@@ -26,6 +26,13 @@ do{
         echo "jumlah hari sewa buku : $jumlah\n";
         echo "harga sewa buku : $harga\n";
         switch($denda){
+            case $denda <= 0;
+            $biaya_denda = 0;
+            $total = $harga + $biaya_denda;
+            echo "biaya denda : $biaya_denda\n";
+            echo "total pembayaran : $harga + $biaya_denda : $total\n";
+            break;
+
             case $denda <= 1;
             $biaya_denda = 5000;
             $total = $harga + $biaya_denda;
