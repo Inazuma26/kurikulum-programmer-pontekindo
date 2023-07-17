@@ -21,7 +21,9 @@ echo "dan saya tinggal di : $alamat\n";
 //contoh dari constanta
 const NAMA = "hanif";
 const ALAMAT = "pagar alam";
-echo NAMA . ALAMAT;
+echo NAMA;
+echo "\n";
+echo ALAMAT;
 echo PHP_EOL;
 
 // 3. buatlah daftar teman 1 divisi beserta nama umur, dan ttl nya (value nya) dalam bentuk array multidimensi / array didalam array dengan keynya beruma nama nama dari teman 1 divisi!
@@ -65,16 +67,19 @@ echo "jika 7 dan 3 dipangkatkan maka hasilnya : $pangkat\n";
 //6.buatlah dengn operator logika dan pengkondisian soal cerita di bawah ini:
 //ayu akan menerima seseorang sebagai suaminya apabila memenui kreteria berikut ini : ahlaknya baik dan salah satu entah itu good looking atau good rekening.
 //lalu budi melamarnya, dia memiliki ahlak yang baik namun tidak good loking dan tidak good rekening
-echo "ayu akan menerima seseorng sebagai suaminya jika memenui kreteria berikut ini
-- ahlak nya baik
-- good looking
-- good rekening\n";
-echo "budi melamarnya, dia memiliki ahlak yang baik namun tidak
-- good looking
-- good rekening\t"; 
-echo "\n";
+$budi="Budi";
+$ahlakbaik=true;
+$goodloking=false;
+$goodrekeming=false;
 
-
-
+if ($ahlakbaik == true && ($goodloking== true || $goodrekeming==true)){
+    $ayu = "saya terima\n";
+}else {
+    $ayu = "saya tidak terima\n";
+}
+echo "jawaban ayu : $ayu\n";
 
 //7. buatlah switch untuk menampilkan tingkatan berat suatu barang! dengan expression / expressi didalam nya ada operator perbandingan misal kurang dari 10kg maka output nya ringan, antara 10-20kg agak ringan dan seterus nya
+
+
+
