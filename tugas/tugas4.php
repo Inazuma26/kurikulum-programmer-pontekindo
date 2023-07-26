@@ -1,4 +1,5 @@
 <?php
+//aplikasi sewa buku
 do{
     echo "apakah anda ingin menyewa buku di perpus kami ?\n";
     echo "ketik iya jika ingin menyewa\n";

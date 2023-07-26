@@ -1,4 +1,5 @@
 <?php
+//aplikasi kasir
 echo "list dan harga barang bangunan yang ada 
 - batu : 30000
 - semen : 20000

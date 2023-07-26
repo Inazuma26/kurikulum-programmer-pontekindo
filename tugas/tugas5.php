@@ -1,4 +1,5 @@
 <?php
+//aplikasi  mini game tebak angka
 $target = mt_rand(1, 9);
 echo "selamat datang di mini game tebak angka 1-9!\n";
 echo "kamu memiliki 3 nyawa untuk menebak angka yang benar.\n";

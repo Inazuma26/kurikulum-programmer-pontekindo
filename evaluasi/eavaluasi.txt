@@ -1,0 +1,55 @@
+BISMILLAH
+SPRINT 2 - SOAL EVALUASI 2
+
+1. Buat inputan dinamis
+- Nama Produk Elektronik yang apabila ditampilkan maka hasilnya huruf kapital semua
+- Deskripsi Produk Elektronik yang apabila kata-kata di dalamnya melebihi 4 kata maka deskripsi tidak ditampikan dan menampilkan 'Deskripsi terlalu panjang'
+- Kode produksi yang apabila inputannya bukan nomor dan melebihi 8 karakter akan menampilkan 'input invalid'
+
+2. Kelompokkan input dinamis, 
+- apabila dua karakter pertama adalah angka dibawah 50 maka menampilkan kalimat 'barang rare' 
+- apabila dua karakter pertama adalah angka di atas 50 maka menampilkan kalimat 'barang super rare'
+- apabila dua karakter pertama adalah karakter dan angka maka menampilkan kalimat 'barang ultra rare'
+- apabila karakter pertama adalah huruf A/B/C maka menampilkan kalimat 'barang unique'
+- apabila karakter pertama adalah huruf D/E/F maka menampilkan kalimat 'barang legend'
+- apabila selain dari itu semua maka menampilkan kalimat 'barang common'
+
+3. Ubah tipe data string berikut ke bentuk array : 'Aqidah & Fiqih & Hadits & Tafsir & Tajwid & Adab'
+
+4. $array = [-2,4,-18,9,0,21,-5];
+- urutkan array berikut dari yang terbesar
+- pisahkan antara data yang bernilai negatif dan positif
+Urutan besar ke kecil : 
+negatif : 
+positif : 
+
+*** data berikut untuk soal no 5-7
+$data = [
+   "id" => 582,
+   "username" => "Fulan",
+   "email" => "fulan@gmail.com",
+   "password" => "123fulan321",
+   "password_confirmation" => "123fulan321",
+];
+
+5. Tambah data nomor telepon pada array di atas 
+
+6. Hapus data password_confirmation pada array di atas
+
+7. Ubah username fulan menjadi nama masing-masing dan tampilkan key dan valuenya dengan menggunakan foreach
+
+------
+
+*** KERJAKAN DENGAN JUJUR DAN MULAI DARI YANG TERMUDAH ***
+
+*** KERJAKAN DENGAN TELITI CEK ULANG SEBELUM DIKUMPULKAN ***
+
+*** KALIAN BOLEH LIHAT SUMBER DARI ***
+1. php.net
+2. w3schools
+
+*** SEBELUM MEMULAI EVALUASI PERTAMA BERDOA TERLEBIH DAHULU - WAKTU MENGERJAKAN SAMPAI ASHAR ***
+
+*** EVALUASI KALIAN PUSH KE GITHUB DENGAN FOLDER EVALUASI1 DI DALAM REPO KURIKULUMPROGRAMMERPOTEKINDO - KIRIM LINK GITHUB KE GOOGLE CLASSROOM ***
+
+*** SEMOGA ALLAH MUDAHKAN TEMAN - TEMAN DALAM MENGERJAKAN EVALUASI AAMIIN ***

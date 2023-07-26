@@ -1,34 +1,46 @@
 <?php
 
-//CRUD 
-// $array=[];
-// while (true){
-// echo "masukan data : ";
-// $data = trim(fgets(STDIN));
-// $array[count($array)+1] = $data;
-// foreach($array as $key => $data){
-    // echo "$key.".$data.PHP_EOL;
-// }
-// }
+// CRUD : Create, Read, Update, Delete
+// 
+$array = [];
+// 
+do{
+    //create
+    echo "Masukkan Data : ";
+    $input = trim(fgets(STDIN));
+    $index = count($array)+1;
+    $array[$index] = $input;
+    foreach ($array as $key => $value) {
+        echo "$key. $value \n";    
+    }
+    echo "Edit data (y/n) ? ";
+    $e = trim(fgets(STDIN));
+    if($e == "y"){
+        //update
+        echo "Pilih Data Yang Ingin Diedit : ";
+        $edit = trim(fgets(STDIN));
+        echo "Anda akan mengedit $array[$edit]\n";
+        echo "Masukkan Data Baru : ";
+        $update = trim(fgets(STDIN));
+        $array[$edit] = $update;
+    }
+    echo "Hapus data (y/n) ? ";
+    $h = trim(fgets(STDIN));
+    if($h == "y"){
+        //delete
+        //menimpa data array terlebih dahulu 
+        //barulah nanti akan dihapus data yang bagian akhir
+        echo "Pilih Data Yang Ingin Dihapus : ";
+        $delete = trim(fgets(STDIN));
+        echo "Anda akan mengdelete $array[$delete]\n";
+        for($i = $delete; $i < count($array); $i++){
+            $array[$i] = $array[$i+1];           
+        }
+        unset($array[count($array)]);
+    }
+}while(true);
 
-// echo "masukan data : ";
-// $value = trim(fgets(STDIN));
-// $array[count($array)+1]=$value;
-// foreach($array as $key => $value){
-    // echo "$key. $value". "\n";
-// }
-// echo "edit data y/n";
-// $edit=trim(fgets(STDIN));
-// if ($edit=="y"){
-    // echo "masukan data yang akan di edit :";
-    // $edit=trim(fgets(STDIN));
-    // echo "anda akan mengedit $array[$edit]\n";
-    // echo "masukan data baru :";
-    // $update=trim(fgets(STDIN));
-    // $array[$edit]=$update;
-// }
-
-//function
+// function
 function sayHello(){
     echo "hello function\n";
 }
@@ -39,7 +51,7 @@ sayHello();
 function notif($nama){//parameter -> variable yang akan digunakan dalam function
     echo "$nama telah terdaftar\n";
 }
-notif("hanif");//value -> yang akan dikirimkan ke parameter
+notif("hanif");// argumen ->value yang akan dikirimkan ke parameter
 
 //menggunakan  kyword global
 $dolar="hanif";
@@ -60,6 +72,7 @@ function harusAngka(int $angka){
     echo $angka . "\n";
 }
 harusAngka(2);
+
 function sum(int $a, int $b ){
     $t = $a + $b;
     echo "$a + $b = $t\n";
@@ -91,3 +104,11 @@ function sun(int $first, int $second):int{
     return $t;
 }
 echo sun(100,100). "\n";
+
+//buat function dengan parameternya  variable-leght-argument yang mana      function akan mengembalikan nilai array dengan nama variable  nya 'siswa'
+//lalu ubah variable siswa menjadi string
+//tampilkan menggunakn echo
+function namaSiswa(...$siswa){
+    return $siswa;
+}
+echo implode("\n",namaSiswa("hanif","faqih","danu","dimas","syfa","hafizt")). "\n"; 

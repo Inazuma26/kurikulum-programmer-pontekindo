@@ -50,3 +50,4 @@ var_dump(false); //salah
 // echo "\n";
 
 // Array multidimensi
+$array=[321,"string",true,null]
