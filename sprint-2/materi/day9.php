@@ -3,7 +3,6 @@
 // CRUD : Create, Read, Update, Delete
 // 
 $array = [];
-// 
 do{
     //create
     echo "Masukkan Data : ";
