@@ -1,0 +1,42 @@
+BISMILLAH
+SPRINT 4 - SOAL EVALUASI 4
+
+# CATATAN :
+* Jangan mau hanya menjadi biasa-biasa saja dalam mengerjakan suatu hal
+* KEJARLAH NILAI SEMPURNA
+* Manfaatkan waktu 5 menit terakhir untuk push ke repository masing-masing di github
+* Kerjakan dengan jujur dan penuh keyakinan
+* Jangan pesimis dan OPTIMIS lah
+* Dilarang keras untuk bekerja sama
+* Idealis lah dengan diri sendiri jangan mau ketinggalan
+* FOKUS!!!
+
+# SOAL
+~Teori~
+1. Apa yang dimaksud dengan database? Sebutkan jenis-jenisnya!
+2. Apa itu database relational?
+3. Apa itu SQL? Secara global ada berapa pengelompokan query SQL. Jelaskan!
+~Praktikal~
+*Untuk soal berikut harap discreenshot jelas & lengkap tidak ada yang terlewat
+4. - Buat database dengan nama NilaiSantri sekaligus table didalamnya dengan nama yang sama berisi id, nama, dan nilai
+   - Masukkan 15 data ke dalam table tersebut, tampilkan semua data dan urutkan dari nilai yang terbesar ke nilai terkecil
+   - Berapa nilai terkecil,nilai terbesar, dan rata-rata nilainya? Tampilkan menggunakan alias!
+   - Tambahkan dengan alter table column divisi (menggunakan enum : multimedia,marketer,programmer) dan isi data acak divisi ke 15 data yang tadi!
+   - Ubah id yang ke-4 nilainya menjadi 77, hapus id yang ke-11, lalu tampilkan data id ke 3 sampai id ke 9 dan ia programmer!
+5. Ekspor database menggunakan mysqldump dan upload ke repo github
+------
+
+*** KERJAKAN DENGAN JUJUR DAN MULAI DARI YANG TERMUDAH ***
+
+*** KERJAKAN DENGAN TELITI CEK ULANG SEBELUM DIKUMPULKAN ***
+
+*** KALIAN BOLEH LIHAT SUMBER DARI ***
+1. mysql.com
+2. w3schools
+3. stackoverflow 
+
+*** SEBELUM MEMULAI EVALUASI, PERTAMA BERDOA TERLEBIH DAHULU - WAKTU MENGERJAKAN SAMPAI ASHAR ***
+
+*** EVALUASI KALIAN PUSH KE GITHUB DENGAN FOLDER EVALUASI4 DI DALAM REPO KURIKULUMPROGRAMMERPOTEKINDO - KIRIM LINK GITHUB KE GOOGLE CLASSROOM ***
+
+*** SEMOGA ALLAH MUDAHKAN TEMAN - TEMAN DALAM MENGERJAKAN EVALUASI AAMIIN ***

@@ -1,0 +1,20 @@
+1. database biasa disebut sebagai tempat menyimpan data dan jenis jenis dari database adalah 
+- operator database.
+- distributed database.
+- relation database.
+- end-user database.
+- database warehause.
+
+2. database relational adalah database yang terdiri dari variale relasi perinsip database relational adalah dasar dari sebagian besar teori dan peraktek memanajemenkan data
+
+3. bahasa SQL umunm nya digunakan untuk menenukan desain database relational dan untuk mendenisikannya atau bahasa standar untuk menanangni database relational 
+dan pengelompokan query nya adalah
+- SELECT = menampilkan.
+- UPDATE = mengapdet data.
+- DELETE = menghapus data.
+- INSERT INTO = memasukan data.
+- CREATE DATABASES = menambah database baru.
+- ALTER DATABASE = mofikasi database.
+- CREATE TABLE = menambahkan table.
+- ALTER TABLE = modifikasi table.
+- DROP TABLE = menghapus table.
