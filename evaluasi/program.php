@@ -1,5 +1,5 @@
 <?php
-require_once "/evaluasi3.php";
-function Santri(){
-    $nilaiSantri 
+function nilaiSantri($nilai){
+    echo "nilai terkecil : ". (min($nilai)).PHP_EOL;
+    echo "nilai terbesar : ". (max($nilai)).PHP_EOL;
 }
