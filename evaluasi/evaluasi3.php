@@ -1,10 +1,16 @@
 <?php
 
 //1
+$nilai = [216, 769, 255, 512, 363, 121];
 function tigaTertinggi($nilai){
-
+    sort($nilai);
+    foreach($nilai as $key => $value){
+        if($key > 2){
+            echo $value. "\n";
+        }
+    }
 }
-tigaTertinggi([216, 769, 255, 512, 363, 121]);
+tigaTertinggi($nilai);
 
 
 //2
@@ -13,29 +19,28 @@ $luas = fn($alas,$tinggi) => $menghitung. 1/2*$alas*$tinggi;
 echo $luas(12,20). "\n";
 
 //3
-function ubahData(...$motor){
-    $hasil = $motor;
-    foreach ($motor as $value){
-        $hasil == $value;
-        echo "ubah data : ".implode(" | ",$motor). " : $hasil".PHP_EOL;
-    }
+function ubahData($sort,$filter,...$data){
+    $sort($data);
+    echo $filter(" | ",($data));
 }
-ubahData("Vario","Supra","Revo","Vixion","Mio","Beat",);
+$imp = "implode";
+ubahData("sort",$imp,"Vario","Supra","Revo","Vixion","Mio","Beat");
+echo "\n";
 
 //4
-echo "masukan jumlah penduduk amigakure : ";
+echo "masukan jumlah penduduk Amegakure : ";
 $jumlah = (int)trim(fgets(STDIN));
 $var=function (){
     global $jumlah;
-    if($jumlah > 200){
-        echo "padat penduduk \n";
-    }elseif($jumlah > 100){
-        echo "cukup penduduk \n";
+    if($jumlah >= 200){
+       return  "padat penduduk \n";
+    }elseif($jumlah >= 100){
+       return  "cukup penduduk \n";
     }else{
-        echo "kurang penduduk  \n";
+       return  "kurang penduduk  \n";
     }
 };
-$var();
+echo $var();
 
 
 //5
@@ -71,4 +76,5 @@ static1();
 
 //6
 $nilaiSantri = [90, 85, 94, 77, 62, 88];
-require_once "/program.php"
+require_once "program.php";
+nilaiSantri($nilaiSantri);
