@@ -5,9 +5,9 @@
 - end-user database.
 - database warehause.
 
-2. database relational adalah database yang terdiri dari variale relasi perinsip database relational adalah dasar dari sebagian besar teori dan peraktek memanajemenkan data
+2. database relational adalah database relasi/hubungan/, database yang mana data datanya atau antar table nya saling berhubungan 
 
-3. bahasa SQL umunm nya digunakan untuk menenukan desain database relational dan untuk mendenisikannya atau bahasa standar untuk menanangni database relational 
+3. bahasa SQL(Structured Query Language) umum nya digunakan untuk menenukan desain database relational dan untuk mendenisikannya atau bahasa standar untuk menanangni database relational 
 dan pengelompokan query nya adalah
 - SELECT = menampilkan.
 - UPDATE = mengapdet data.
