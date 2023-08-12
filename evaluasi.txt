@@ -1,0 +1,15 @@
+2. table relationship adalah tabel yang bisa menghubungkan ke beberapa table.
+
+3. macam macam join ada 4 yaitu
+- inner join : inner join untuk menampilkan nilai/data yang sama di antara ke dua tabel
+- left join : left join untuk menampilkan semua dat yang sama dari kiri dan dengan yang sama dari table kanan
+- right join : right join menampilkan semua data yang sama dari kanan dan dengan yeng sama dari table kiri
+- cross join : cross join untuk menampilkan semua data pada table -> namun ini sayang jarang di gunakan
+
+4. ada 3 macam relasi table yaitu : one to one - one to many - dan many to many
+
+- one to one : sesuai nama nya kitadapat merelasikan table dengan cara satu data table ke satu  data table lain nya.
+
+- one to many : one to many juga berarti satu ke banyak dan bisa juga dijelaskan bahwa kita dapat merelasikan antara satu data table ke banyak data table lainya.
+
+- many to many : many to many artinya adalah banyak ke banyak dan bisa juga di jelaskan bahwa kita dapat merelasikan banyak data table ke banyak data teble lainya -> jenis relasi ini adalah jenis yang lumayan susah di pahami oleh pemula dari antara ke tiga macam relasi
