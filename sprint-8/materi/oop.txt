@@ -1,0 +1,14 @@
+objek : data yang berisi property dan method
+
+class : blueprint istilah teknis/cetakan untuk membuat objek,di dalam class ada property dan method juga namun ada bedanya adalah deklarasi propertys dan function
+sebuah class bisa membuat objeck tanpa batas
+
+gaya penulisan kode program 
+1. snake_case : dengan underscore
+2. camel case : semua kata menyatu dan huruf kapital untuk pemisah nya
+3. kebab case : pemisah nya tanda strip
+4. all caps : semua kapital
+
+Fields / Properties / Attributes adalah data yang bisa kita sisipkan di dalam Object
+Namun sebelum kita bisa memasukkan data di fields, kita harus mendeklarasikan data apa aja yang dimiliki object tersebut di dalam deklarasi class-nya
+Membuat field sama seperti membuat variable, namun ditempatkan di block class, namun diawali dengan kata kunci var

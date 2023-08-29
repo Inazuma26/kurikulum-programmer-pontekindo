@@ -1,0 +1,29 @@
+ERD 
+erd adalah suatu model yang dia itu menjelaskan hubungan antar data pada database
+erd ini punya simbol simbol yang ada 4 dasar nya yaitu 
+- entyty : objek yang dapat di bedakan dengan yang lain
+- atribut: relasinya dari entyty 
+- jenis atribut : atribut(key) atribut yang tidak bisa sama dengan yang lain
+- atribut simple : atibut yang bernilai tunggal
+- atribut multivelue : atribut yang memiliki sekelompok nilai 
+
+
+normalisasi database
+
+manfaat normalisasi tadabase : mencegah masalah dan membuat pemeliharaan database lebih mudah
+jenis normal form 
+- unf : bentuk tidak normal
+- 1nf : tidak ada value dable di dalam satu kolom 
+- 2nf : setiap atribut harus berelasi dengan foreign key
+- 3nf : tidak boleh ada 3 relasi dalam 1 table -> 
+
+boyce codd normal from : sejeni s3nf namun lebih ketat meremove 
+
+fourt normal from(4nf) : harus memenuhi boyce codd normal from
+5nf sudah memenuhi form-form sebelum nya 
+
+
+DFD 
+data flow diagram
+devinisi DVD : cara menampilkan secara visual bagaimana aliran data bergerak
+tujuan : memahami bagaimana alur data berjalan 
