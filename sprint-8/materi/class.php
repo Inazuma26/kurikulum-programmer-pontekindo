@@ -21,17 +21,19 @@ class laptop{
     }
 
     function __destruct(){
-        echo "hai saya adalah destruct<br>";
+        echo "hai saya adalah destruct <br>";
     }
 }
+class NamaProduk extends laptop {
 
-//car membuar objeck
-$lenovo = new laptop();
-$lenovo->brand = "Lenovo";
-$lenovo->price = 4500000;
-$lenovo->hargaProduk();
-echo "<br>";
-echo laptop::DB;
+}
+// cara membuar objeck
+// $lenovo = new laptop();
+// $lenovo->brand = "Lenovo";
+// $lenovo->price = 4500000;
+// $lenovo->hargaProduk();
+// echo "<br>";
+// echo laptop::DB;
 // var_dump($lenovo);
 // echo "Nama Brand : ".$lenovo->brand;
 // echo "<br>";
@@ -44,4 +46,6 @@ echo laptop::DB;
 // $hp = new laptop();
 // var_dump($asus,$hp,$lenovo);
 // 
-?>
+$laptop = new laptop();
+$asus = new NamaProduk();
+echo $asus->price."<br>";
