@@ -1,3 +1,27 @@
+<?php
+//Tambah
+require 'conn.php';
+$todolist = query("SELECT * FROM todo");
+
+if(isset($_POST["submit"])){
+  
+  if(tambah($_POST) > 0 ){
+    echo "
+      <script>
+        alert('Data Berhasil Di Tambahkan!');
+        document.location.href='index.php';
+      </script>";
+  }else{
+    echo "
+    <script>
+        alert('Data Gagal Di Tambahkan!');
+        document.location.href='index.php';
+    </script>";
+  }
+
+
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +33,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
+  <div class="container">
     <a class="navbar-brand" href="#">Todo List</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -44,37 +68,53 @@
     </div>
   </div>
 </nav>
+
+<div class="my-5 ">
 <div class="container">
+
+<form action="" method="post">
+<div class="mb-3">
+  <label for="deskription" class="form-label">New To Do</label>
+  <input type="text" class="form-control" id="deskription" name="deskription" placeholder="New To Do" required>
+</div>
+<select class="form-select" aria-label="Default select example" name="periority">
+  <option selected>Priority</option>
+  <option value="high">high</option>
+  <option value="medium">medium</option>
+  <option value="low">low</option>
+</select>
+<button class="btn btn-outline-primary my-3" type="submit" name="submit">Add!</button>
+</form>
+
+<div class="container text-center my-5" >
     <table class="table">
   <thead>
 </div>
         <tr>
-            <th scope="col">priority</th>
-            <th scope="col">Description</th>
-            <th scope="col">Status</th>
-            <th scope="col">Action</th>
+            <th scope="col">No</th>
+            <th scope="col">Priority</th>
+            <th scope="col">Tugas</th>
+            <th scope="col">Aksi</th>
         </tr>
   </thead>
   <tbody>
+    <?php $no=1; ?>
+  <?php foreach($todolist as $todo) : ?>
         <tr>
-            <th scope="row"></th>
-            <td></td>
-            <td></td>
-            <td></td>
+            <th><?php echo $no; ?></th>
+            <th scope="row"><?php echo $todo["priority"] ?></th>
+            <td><?php echo $todo["deskription"]?></td>
+            <td>
+              <a class="btn btn-outline-danger" role="button" href="hapus.php?id=<?php echo $todo["id"] ?>" onclick="return confirm ('yakin ingin mengahapus data ini ? ')">Hapus</a>
+              <a class="btn btn-outline-info" role="button" href="ubah.php?id=<?php echo $todo["id"] ?>">Ubah</a>
+            </td>
         </tr>
-        <tr>
-            <th scope="row"></th>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th scope="row"></th>
-            <td colspan="2"></td>
-            <td></td>
-        </tr>
+        <?php $no++; ?>
+  <?php endforeach; ?>
     </tbody>
 </table>
+</div>
+</div>
 </div>
 <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
