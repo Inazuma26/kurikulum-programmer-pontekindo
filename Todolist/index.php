@@ -18,8 +18,6 @@ if(isset($_POST["submit"])){
         document.location.href='index.php';
     </script>";
   }
-
-
 }
 ?>
 <!DOCTYPE html>
@@ -70,7 +68,7 @@ if(isset($_POST["submit"])){
 </nav>
 
 <div class="my-5 ">
-<div class="container">
+<div class="container alert alert-dark">
 
 <form action="" method="post">
 <div class="mb-3">
@@ -86,9 +84,9 @@ if(isset($_POST["submit"])){
 <button class="btn btn-outline-primary my-3" type="submit" name="submit">Add!</button>
 </form>
 
-<div class="container text-center my-5" >
-    <table class="table">
-  <thead>
+<div class="container text-center my-5 " >
+    <table class="table table-striped table-hover">
+  <thead class="table-dark">
 </div>
         <tr>
             <th scope="col">No</th>
@@ -106,7 +104,7 @@ if(isset($_POST["submit"])){
             <td><?php echo $todo["deskription"]?></td>
             <td>
               <a class="btn btn-outline-danger" role="button" href="hapus.php?id=<?php echo $todo["id"] ?>" onclick="return confirm ('yakin ingin mengahapus data ini ? ')">Hapus</a>
-              <a class="btn btn-outline-info" role="button" href="ubah.php?id=<?php echo $todo["id"] ?>">Ubah</a>
+              <a class="btn btn-outline-info" role="button" href="ubah.php?id=<?php echo $todo["id"] ?>" onclick="return confirm ('yakin ingin mengubah data ini ? ')">Ubah</a>
             </td>
         </tr>
         <?php $no++; ?>

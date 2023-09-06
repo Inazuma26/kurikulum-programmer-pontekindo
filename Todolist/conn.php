@@ -1,6 +1,6 @@
 <?php 
 //koneksi
-$conn = mysqli_connect("localhost","inazuma","","todolist");
+$conn = mysqli_connect("localhost","inazuma","","todolist"); 
 
 function query($query){
     global $conn;

@@ -12,3 +12,62 @@ gaya penulisan kode program
 Fields / Properties / Attributes adalah data yang bisa kita sisipkan di dalam Object
 Namun sebelum kita bisa memasukkan data di fields, kita harus mendeklarasikan data apa aja yang dimiliki object tersebut di dalam deklarasi class-nya
 Membuat field sama seperti membuat variable, namun ditempatkan di block class, namun diawali dengan kata kunci var
+
+OOP : Object Oriented Programming adalah sudut pandang bahasa pemrogramman yang berkonsep "objek"
+bnyk sudut pandang dalam bahasa pemrogramman tapi ini yang paling populer
+
+Apa itu object?
+Object adalah data yang berisi field/ properties / attributes dan method / function behavior
+
+Apa itu class
+class adalah blueprint, prototype atau cetakan untuk membuat object
+class berisikan deklarasi semua properties dan functions yang dimiliki oleh object
+setiap object selalu dibuat dari class dan sebua class bisa mmebuat object tanpa batas
+
+Cara buat class
+untuk membuat class, kita bisa menggunakan kata kunci class
+penamaan class biasa menggunakan format camelcase
+
+4 macam gaya penulisan code Programming
+1. snake case, gaya penulisan snake case biasanya kita jumpai pada pemrograman prosedural
+
+2. pascal case, gaya penulisan pascal case biasanya digunakan pada pemrograman OOP dengan cara menambah
+nama class dengan huruf kapital pertama (PascalCase) CONTOH : SantriPondokTeknologi
+
+3. kebab-case, gaya penulisan kebab-case biasanya digunakan pada pemrograman web development
+(kebab-case), cara menggunakan tanda minus (-) untuk memisah suku kata
+
+4. camel case, gaya penulisan camel case biasanya digunakan pada pemrograman javascript
+(camelCase), cirinya semua suku kata menyatu dan terdapat huruf kapital untuk memisahnya CONTOH :santriPondokTeknologi
+
+5.All Caps, gaya penulisan ini sering digunakan untuk menuliskan nama sebuah konstanta
+
+object adalah hasil instantsi dari sebuah class
+untuk membuat object kita bisa menggunakan kata kunci new, dan diikuti nama class dan kurung ()
+
+Type Declaration
+type declaration merupakan bagian penting dalam pemrograman, type dapat ditentukan jika ingin melakukan validasi
+type declaration merupakan bagian penting dalam pemrograman dibaliknya type system  
+
+Function
+
+
+
+oop memiliki 4 pilar
+1. Inherintance
+apa itu Inherintance
+Inherintance adalah salah satu fitur utama oop yaitu inheritance
+Inheritance merupakan suatu polimorfisme yang terjadi saat ada beberapa objek yang mempunyai fung
+si yang sama namun perbedaan antara mereka adalah nilainya
+contoh:
+class Animal {
+    public name; // property
+    }
+    class Cat extends Animal{
+        public color = "black";//property
+        }
+        cat akan mempunyai atribut name dan color juga
+
+2. Encapsulation
+3. Abstraction
+4. Polymorphism
