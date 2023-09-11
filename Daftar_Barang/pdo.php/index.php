@@ -25,6 +25,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 </head>
 <body>
 <div class="container my-5 alert alert-dark">
+    <h2><strong>Daftar Barang Di Gudang</strong></h2>
 <form action="<?= $_SERVER['PHP_SELF']; ?>" method="post">
 <div class="mb-3">
     <label for="nama" class="form-label">Masukan Nama Barang</label>
@@ -59,8 +60,8 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
         <td><?= $row['nama']; ?></td>
         <td><?= $row['jumlah']; ?></td>
         <td>
-        <a href="edit.php?id=<?= $row['id'] ?>" class="btn btn-outline-info">Edit</a>
-        <a href="delete.php">Hapus</a>
+        <a href="ubah.php?id=<?= $row['id'] ?>" class="btn btn-outline-info">Ubah!</a>
+        <a href="delete.php?id=<?= $row['id'] ?>" class="btn btn-outline-danger">Hapus</a>
         </td>
         </tr>
     <tr>
