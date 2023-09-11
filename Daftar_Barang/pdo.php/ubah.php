@@ -26,6 +26,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 <body>
 
 <div class="container my-5 alert alert-dark">
+    <h2><strong>Mengubah Daftar Barang</strong></h2>
 <form action="<?= $_SERVER['REQUEST_URI']; ?>" method="post">
 <div class="mb-3">
     <label for="nama" class="form-label" >Ubah Nama Barang </label>

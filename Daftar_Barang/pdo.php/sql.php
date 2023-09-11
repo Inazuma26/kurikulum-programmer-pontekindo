@@ -6,6 +6,7 @@ class crud extends database{
         $stmt->execute();
         return $stmt;
     }
+    // function creat
     public function insertData($nama,$jumlah){
         try{
             $sql = "INSERT INTO daftar (nama,jumlah) VALUES (:nama, :jumlah)";
@@ -20,6 +21,7 @@ class crud extends database{
             return false;
         }
     }
+    //funtion read
     public function detailData($data){
         try {
             $sql = "SELECT id,nama,jumlah FROM daftar WHERE id=:id";
@@ -40,6 +42,7 @@ class crud extends database{
             echo $e->getMessage();
         }
     }
+    //function update
     public function updateData($nama,$jumlah,$data){
         try {
             $sql = "UPDATE daftar SET nama=:nama, jumlah=:jumlah WHERE id=:id";
@@ -55,6 +58,7 @@ class crud extends database{
             return false;
         }
     }
+    //function delete
     public function delete($data){
         try {
             $sql = "DELETE FROM daftar WHERE id = :id ";

@@ -25,6 +25,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 </head>
 <body>
 <div class="container my-5 alert alert-dark">
+    <h2><strong>Menghapus Daftar Barang</strong></h2>
 <form action="<?= $_SERVER['REQUEST_URI']; ?>" method="post">
 <div class="mb-3">
     <button type="submit" class="mt-4 btn btn-md btn-danger">Hapus!</button>
