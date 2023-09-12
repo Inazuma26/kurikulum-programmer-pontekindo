@@ -36,7 +36,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     <label for="jumlah" class="form-label">Masukan Jumlah Barang</label>
     <input type="number" class="form-control" id="jumlah" name="jumlah" placeholder="Jumlah Barang" required>
 </div>
-<button class="btn btn-outline-primary" type="submit" name="submit">Add!</button>
+<button class="btn btn-outline-primary" type="submit" name="submit">Tambah!</button>
 </form>
 
 <table class="table table-striped mt-2 text-center">
@@ -60,8 +60,8 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
         <td><?= $row['nama']; ?></td>
         <td><?= $row['jumlah']; ?></td>
         <td>
-        <a href="ubah.php?id=<?= $row['id'] ?>" class="btn btn-outline-info">Ubah!</a>
-        <a href="delete.php?id=<?= $row['id'] ?>" class="btn btn-outline-danger">Hapus</a>
+        <a href="ubah.php?id=<?= $row['id'] ?>" class="btn btn-info">Ubah!</a>
+        <a href="delete.php?id=<?= $row['id'] ?>" class="btn btn-danger">Hapus</a>
         </td>
         </tr>
     <tr>
