@@ -1,0 +1,1 @@
+Laravel adalah kerangka aplikasi web dengan sintaksis yang ekspresif dan elegan. Kami telah meletakkan fondasinya — memberi Anda kebebasan untuk berkreasi tanpa harus memusingkan hal-hal kecil.
