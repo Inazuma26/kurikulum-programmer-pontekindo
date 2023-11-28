@@ -29,4 +29,62 @@ class crud extends database{
             return false;
         }
     }
+
+    //function read
+    public function detailData($data){
+        try {
+            $sql = "SELECT id,pasien ,bpjs, poliklinik, dokter FROM klinik WHERE id=:id";
+            $stmt = $this->conn->prepare($sql);
+            $stmt->bindParam(":id",$data);
+            $stmt->execute();
+            $stmt->bindColumn(1,$this->id);
+            $stmt->bindColumn(2,$this->pasien);
+            $stmt->bindColumn(3,$this->bpjs);
+            $stmt->bindColumn(4,$this->poliklinik);
+            $stmt->bindColumn(5,$this->dokter);
+            $stmt->fetch(PDO::FETCH_ASSOC);
+            if($stmt->rowCount()==1){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        catch(PDOException $e){
+            echo $e->getMessage();
+        }
+    }
+
+    //function update
+    public function updateData($pasien,$bpjs,$poliklinik,$dokter,$data ){
+        try {
+            $sql = "UPDATE klinik SET pasien=:pasien, bpjs=:bpjs, poliklinik=:poliklinik, dokter=:dokter WHERE id=:id";
+            $stmt = $this->conn->prepare($sql);
+            $stmt->bindParam(":pasien",$pasien);
+            $stmt->bindParam(":bpjs",$bpjs);
+            $stmt->bindParam(":poliklinik",$poliklinik);
+            $stmt->bindParam(":dokter",$dokter);
+            $stmt->bindParam(":id",$data);
+            $stmt->execute();
+            return true;
+        }
+        catch(PDOEXception $e){
+            echo $e->getMessage();
+            return false;
+        }
+    }
+
+    //function delete
+    public function delete($data){
+        try {
+            $sql = "DELETE FROM klinik WHERE id = :id ";
+            $stmt = $this->conn->prepare($sql);
+            $stmt->execute(array("id"=>$data));
+            return true;
+        }
+        catch(PDOEXception $e){
+            echo $e->getMessage();
+            return false;
+        }
+    }
+
 }

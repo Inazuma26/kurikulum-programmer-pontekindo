@@ -42,7 +42,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
             padding: 0;
             font-family: Arial, sans-serif;
         }
-
+        
         /* Gaya sidebar */
         .sidebar {
             width: 250px;
@@ -53,8 +53,8 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
             left: 0;
             padding-top: 20px;
         }
-
-
+        
+        
         .logo {
             display: flex;
             align-items: center;
@@ -62,50 +62,53 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
             font-size: 24px;
             font-weight: bold;
         }
-
+        
         .menu {
             list-style: none;
             padding: 0;
         }
-
+        
         .menu li {
             padding: 10px 0;
             border-bottom: 1px solid #ccc;
         }
-
+        
         .menu li a {
             display: block;
             padding: 10px 20px;
             color: #333;
             text-decoration: none;
         }
-
+        
         .menu li a:hover {
             background-color: #ddd;
         }
-
+        
         /* Gaya dropdown */
         .dropdown:hover .submenu {
             display: block;
         }
-
+        
         .submenu {
             display: none;
             list-style: none;
             margin: 0;
             padding: 0;
         }
-
+        
         .submenu li {
             padding: 8px 0 8px 40px;
         }
-
+        
         /* Gaya ikon dari Google Fonts */
         .material-icons {
             font-family: 'Material Icons';
             vertical-align: middle;
         }
-
+        
+        /* Gaya konten */
+        
+        
         .hospital{
             display: flex;
             align-items: center;
@@ -451,35 +454,15 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
                     <i class="text-dark fa-solid fa-ellipsis-vertical"></i>
                     </button>
                     <ul class="dropdown-menu">
-                        <li><button type="submit" class="btn btn-outline-info" data-toggle="modal" data-target="#mydataModal">
-                                <i class="fa-solid fa-square-pen"></i><span class="ms-3">Ubah Data Pasien</span>
-                            </button>
+                        <li>
+                            <!-- <button type="submit" class="btn btn-outline-info" > -->
+                                <a href="update.php?id=<?= $row['id'] ?>" class="btn btn-outline-info"><i class="fa-solid fa-square-pen"></i><span class="ms-3">Ubah Data Pasien</span></a>
+                            <!-- </button> -->
                         </li>
                         <li>
-                        <button type="button" class="btn btn-outline-danger mt-1" data-toggle="modal" data-target="#hapusModal" data-toggle="modal">
-                                <i class="fa-solid fa-trash"></i><span class="ms-2 ">Hapus Data Pasien</span>
-                                </button>
-                            Modal
-                        <div class="modal fade" id="hapusModal" tabindex="-1" role="dialog" aria-labelledby="hapusModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="hapusModalLabel">Konfirmasi Hapus Data</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        Apakah Anda yakin ingin menghapus data ini?
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-                                        <button type="button" class="btn btn-danger">Hapus</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                        <!-- <button type="button" class="btn btn-outline-danger mt-1" > -->
+                               <a href="delete.php?id=<?= $row['id'] ?>" class="btn btn-outline-danger mt-1"><i class="fa-solid fa-trash"></i><span class="ms-2 ">Hapus Data Pasien</span></a>
+                                <!-- </button> -->
                         </li>
                     </ul>
                     </td>
